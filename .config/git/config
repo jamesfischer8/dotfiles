@@ -4,3 +4,5 @@
 	email = contact@jamesfischer.dev
 [rebase]
 	autosquash = true
+[push]
+	autoSetupRemote = true
