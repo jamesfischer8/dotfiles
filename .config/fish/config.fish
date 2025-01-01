@@ -7,3 +7,6 @@ set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx IRB_USE_AUTOCOMPLETE false
 set -gx IRB_COMPLETOR type
+function fish_greeting
+  fortune -a -s
+end
