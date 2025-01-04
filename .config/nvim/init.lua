@@ -1,3 +1,9 @@
+-- Set indentation to 2 spaces
+vim.opt.expandtab = true    -- Convert tabs to spaces
+vim.opt.shiftwidth = 2      -- Number of spaces for auto-indent
+vim.opt.autoindent = true   -- Copy indent from current line when starting a new line
+vim.opt.smartindent = true  -- Smart autoindenting when starting a new line
+
 -- Enable built-in filetype detection and syntax highlighting
 vim.cmd('syntax enable')
 vim.cmd('filetype plugin indent on')
