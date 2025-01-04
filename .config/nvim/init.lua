@@ -20,7 +20,7 @@ require('nvim-treesitter.configs').setup({
 })
 
 -- Theme setup
-require("catppuccin").setup({
-    flavour = "macchiato"
+require('gruvbox').setup({
+  contrast = "hard",
 })
-vim.cmd([[colorscheme catppuccin]])
+vim.cmd("colorscheme gruvbox")
