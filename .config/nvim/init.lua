@@ -7,6 +7,10 @@ vim.opt.smartindent = true  -- Smart autoindenting when starting a new line
 -- Wrap on whole words
 vim.opt.linebreak = true
 
+-- Enable spell checking
+vim.opt.spell = true
+vim.opt.spelllang = "en_us"
+
 -- Enable built-in filetype detection and syntax highlighting
 vim.cmd('syntax enable')
 vim.cmd('filetype plugin indent on')
