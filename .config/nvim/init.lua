@@ -8,8 +8,13 @@ vim.opt.smartindent = true  -- Smart autoindenting when starting a new line
 vim.opt.linebreak = true
 
 -- Enable spell checking
-vim.opt.spell = true
-vim.opt.spelllang = "en_us"
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "text", "tex" }, -- Spell-checked file types
+  callback = function()
+    vim.opt_local.spell = true
+    vim.opt_local.spelllang = "en_us"
+  end,
+})
 
 -- Enable built-in filetype detection and syntax highlighting
 vim.cmd('syntax enable')
