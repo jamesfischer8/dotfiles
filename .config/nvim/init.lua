@@ -25,6 +25,9 @@ vim.opt.number = true          -- Show line numbers
 vim.opt.syntax = 'on'          -- Enable syntax highlighting
 vim.opt.termguicolors = true   -- Enable true color support
 
+-- Add hotkey to clear search highlight
+vim.keymap.set('n', '<ESC><ESC>', ':nohlsearch<CR>')
+
 -- Set up Treesitter for syntax highlighting
 require('nvim-treesitter.configs').setup({
   ensure_installed = { "lua", "vim", "javascript", "ruby", "python", "html", "css" },
