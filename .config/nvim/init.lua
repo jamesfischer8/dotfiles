@@ -28,6 +28,9 @@ vim.opt.termguicolors = true   -- Enable true color support
 -- Add hotkey to clear search highlight
 vim.keymap.set('n', '<ESC><ESC>', ':nohlsearch<CR>')
 
+-- Allow arrow keys to move across line boundaries in insert mode
+vim.opt.whichwrap:append("<,>,[,]")
+
 -- Set up Treesitter for syntax highlighting
 require('nvim-treesitter.configs').setup({
   ensure_installed = { "lua", "vim", "javascript", "ruby", "python", "html", "css" },
