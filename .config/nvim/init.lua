@@ -33,7 +33,7 @@ vim.opt.whichwrap:append("<,>,[,]")
 
 -- Set up Treesitter for syntax highlighting
 require('nvim-treesitter.configs').setup({
-  ensure_installed = { "lua", "vim", "javascript", "ruby", "python", "html", "css" },
+  ensure_installed = { "lua", "vim", "javascript", "ruby", "python", "html", "css", "terraform", "hcl" },
   highlight = {
     enable = true,
     additional_vim_regex_highlighting = false, -- Disable old syntax highlighting
