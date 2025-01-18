@@ -1,2 +1,5 @@
 theme=GruvboxDarkHard
 shell-integration=fish
+scrollback-limit=100000
+window-height=80
+window-width=240
