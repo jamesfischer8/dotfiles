@@ -1,1 +1,2 @@
-theme = GruvboxDarkHard
+theme=GruvboxDarkHard
+shell-integration=fish
