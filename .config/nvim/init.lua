@@ -48,3 +48,6 @@ require('gruvbox').setup({
   contrast = "hard",
 })
 vim.cmd("colorscheme gruvbox")
+
+-- Set up lazy.nvim package manager
+require("config.lazy")
