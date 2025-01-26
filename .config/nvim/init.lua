@@ -31,18 +31,6 @@ vim.keymap.set('n', '<ESC><ESC>', ':nohlsearch<CR>')
 -- Allow arrow keys to move across line boundaries in insert mode
 vim.opt.whichwrap:append("<,>,[,]")
 
--- Set up Treesitter for syntax highlighting
-require('nvim-treesitter.configs').setup({
-  ensure_installed = { "lua", "vim", "javascript", "ruby", "python", "html", "css", "terraform", "hcl" },
-  highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = false, -- Disable old syntax highlighting
-  },
-  indent = {
-    enable = true,
-  },
-})
-
 -- Theme setup
 require('gruvbox').setup({
   contrast = "hard",
