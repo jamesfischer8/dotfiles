@@ -51,3 +51,7 @@ vim.cmd("colorscheme gruvbox")
 
 -- Set up lazy.nvim package manager
 require("config.lazy")
+
+-- Set splits to open on the right/bottom
+vim.opt.splitright = true
+vim.opt.splitbelow = true
