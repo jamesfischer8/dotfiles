@@ -9,6 +9,8 @@ return {
         "lua",
         "vim",
         "javascript",
+        "typescript",
+        "tsx",
         "ruby",
         "python",
         "html",
@@ -24,6 +26,11 @@ return {
       indent = {
         enable = true
       },
+      rainbow = {
+        enable = true,
+        extended_mode = true,
+        max_file_lines = 1000
+      }
     })
   end
 }
