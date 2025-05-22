@@ -2,8 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 set -x PATH /opt/local/bin /opt/local/sbin $PATH
-set -gx EDITOR nvim
-set -gx VISUAL nvim
+set -gx EDITOR vim
+set -gx VISUAL vim
 set -gx IRB_USE_AUTOCOMPLETE false
 set -gx IRB_COMPLETOR type
 function fish_greeting
