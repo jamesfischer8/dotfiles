@@ -27,3 +27,7 @@ if not contains $_asdf_shims $PATH
     set -gx --prepend PATH $_asdf_shims
 end
 set --erase _asdf_shims
+
+if test -f ~/.fish_secrets
+    source ~/.fish_secrets
+end
