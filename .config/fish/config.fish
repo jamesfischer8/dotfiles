@@ -31,3 +31,10 @@ set --erase _asdf_shims
 if test -f ~/.fish_secrets
     source ~/.fish_secrets
 end
+
+# pnpm
+set -gx PNPM_HOME "/Users/james/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
