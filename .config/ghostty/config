@@ -4,5 +4,6 @@ shell-integration-features=true
 scrollback-limit=10000000
 window-height=80
 window-width=240
+unfocused-split-opacity = 0.9
 cursor-style=block
 shell-integration-features = no-cursor
