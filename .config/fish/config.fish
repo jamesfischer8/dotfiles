@@ -6,6 +6,7 @@ set -gx EDITOR vim
 set -gx VISUAL vim
 set -gx IRB_USE_AUTOCOMPLETE false
 set -gx IRB_COMPLETOR type
+set fish_cursor_default block
 function fish_greeting
   # fortune -s
 end
